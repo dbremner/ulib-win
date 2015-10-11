@@ -138,7 +138,7 @@ void myCube()    // Draw wire frame green cube: Roatate, Translate, Scale
 void DrawMyStuff()  // The Drawing Routine
 {
     float i, j;
-    double x,y, xstep;
+    double x,y;
     myRectangle();
     babyRectangle();
     myRectangle();

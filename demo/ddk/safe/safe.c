@@ -802,7 +802,6 @@ NTSTATUS   GetFilePath2000_2003(HANDLE     KeyHandle,char   *fullname)  //È¡ÎÄ¼þ
     PVOID   pKey=NULL,pFile=NULL;
     UNICODE_STRING                   fullUniName;
     ANSI_STRING                           akeyname;
-    ULONG   actualLen;   
     UNICODE_STRING   dosName;
 
     if (KeyHandle==0) return   STATUS_ACCESS_DENIED;
@@ -1838,7 +1837,6 @@ NTSTATUS FakedZwWriteVirtualMemory(IN HANDLE ProcessHandle,IN PVOID BaseAddress,
     PEPROCESS TempCurrentProcess;
 
     PEPROCESS SrcProcess=0;
-    ULONG uProcessName;
     char szCurrentProcess[MAX_PATH];
     char szObjectProcess[MAX_PATH];
     ++Quote_HookDrive;

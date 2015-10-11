@@ -115,7 +115,7 @@ void myhelp(void)
 
 void mouse1(int button, int state, int x, int y)
 {
-    float y0,xn,yn,xtemp;
+    float y0,xn,yn;
     static float k , x0;
     static char s1[25], s2[25], s3[25], s4[25];
     int i;

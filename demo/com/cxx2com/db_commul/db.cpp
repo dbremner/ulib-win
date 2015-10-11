@@ -312,7 +312,7 @@ HRESULT _stdcall DllCanUnloadNow() {
 
 STDAPI DllRegisterServer(void)
 {
-    HKEY hKeyCLSID, hKeyInproc32;
+    HKEY hKeyCLSID;
     DWORD dwDisposition;
     if (RegCreateKeyEx(HKEY_CLASSES_ROOT, 
                 "CLSID\\{30DF3430-0266-11cf-BAA6-00AA003E0EED}", 

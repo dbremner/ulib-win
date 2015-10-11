@@ -462,7 +462,7 @@ void iterate(int loopno)
 {
   register int i, j, pij;
   register lpitem *k;
-  register etype d, da, stp, dp, sumd, mu, *pi, *xi;
+  register etype d, stp, dp, sumd, mu, *pi, *xi;
   register itype zlpmin, h, count;
   itype zlp;
   lpitem a[MSIZE];
@@ -856,7 +856,6 @@ void quadbranch(stype ps, stype ws, int t)
 int quadknap(int no, int cap, int *ptab, int *wtab, int *xtab)
 {
   int i, j;
-  long time, ltime;
   stype ps, ws;
   ntype nf, fix;
   ntype ord[MSIZE], o1[MSIZE];

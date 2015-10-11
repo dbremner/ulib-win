@@ -42,8 +42,6 @@ int main(int argc, char *argv[])
     int     n;               /* number of characters received       */
     int optval = 1;          /* options set by setsockopt           */
 
-    int nState;
-
     USocket us;
     us.init();
 

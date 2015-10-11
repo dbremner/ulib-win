@@ -73,7 +73,6 @@ static NTSTATUS MydrvDispatch (IN PDEVICE_OBJECT DeviceObject, IN PIRP Irp)
 VOID ProcessCreateMon ( IN HANDLE hParentId, IN HANDLE PId,IN BOOLEAN bCreate )
 {
     PEPROCESS  EProcess;
-    ULONG      ulCurrentProcessId;
     LPTSTR       lpCurProc;
     NTSTATUS   status;
     status = PsLookupProcessByProcessId( (ULONG)PId, &EProcess);
@@ -97,7 +96,6 @@ VOID ProcessCreateMon ( IN HANDLE hParentId, IN HANDLE PId,IN BOOLEAN bCreate )
 VOID ThreadCreateMon (IN HANDLE PId, IN HANDLE TId, IN BOOLEAN  bCreate)
 {
     PEPROCESS   EProcess;
-    ULONG        ulCurrentProcessId;
     LPTSTR        lpCurProc;
     NTSTATUS    status;
     status = PsLookupProcessByProcessId( (ULONG)PId, &EProcess);

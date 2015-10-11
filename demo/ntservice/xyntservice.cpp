@@ -318,7 +318,6 @@ BOOL RunService(char* pName, int nArg, char** pArg)
 VOID WINAPI XYNTServiceMain( DWORD dwArgc, LPTSTR *lpszArgv )
 {
     DWORD   status = 0;
-    DWORD   specificError = 0xfffffff;
 
     serviceStatus.dwServiceType        = SERVICE_WIN32;
     serviceStatus.dwCurrentState       = SERVICE_START_PENDING;
