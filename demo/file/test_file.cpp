@@ -52,7 +52,7 @@ public:
             return onBnRead();
         case IDC_BN_WRITE:
             return onBnWrite();
-        defalut:
+        default:
             return UDialogBox::onCommand(wParam, lParam);
         }
     }
