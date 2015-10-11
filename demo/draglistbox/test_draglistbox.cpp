@@ -87,7 +87,7 @@ public:
         HRESULT hr;
         TEXTMETRIC tm;
         TCHAR tchBuffer[BUFFER] = "xxx";
-        size_t cch;
+        //size_t cch;
         RECT rcBitmap;
         int y;
         HBITMAP hbmpPicture, hbmpOld;

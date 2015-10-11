@@ -72,7 +72,7 @@ void sendCmd(const char *cmd)
 
     HWND hLast = NULL;
 
-    char moduleName[256];
+    //char moduleName[256];
 
     // Loop over to find the Fluent window with WindowClass
     //if ((hFluentWnd = ::FindWindow("AfxFrameOrView80s", NULL))!=NULL)
