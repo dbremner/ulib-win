@@ -21,7 +21,6 @@ long TReadData(SOCKET hSock, HWND hOurDlg, int read_len)
     extern long blocking_option;
     extern int run_cancelled;
     struct linger AcceptLinger;
-    BOOL running = FALSE;
     BOOL bTemp = TRUE;
     SetDlgItemText(hOurDlg, IDD_COMMENT, "Awaiting the TCP Data ...");
     SetDlgItemText(hOurDlg, IDD_HNAME, "                                            ");

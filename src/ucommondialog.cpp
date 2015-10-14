@@ -38,11 +38,9 @@ extern "C"
 	unsigned int CALLBACK FileDialogHook(HWND hwnd, UINT uMsg, WPARAM wParam,
 		LPARAM lParam)
 	{
-		static HWND hwndParentDialog;
 		LPOFNOTIFY lpofn;
 		int cbLength;
 		static LPTSTR lpsz;
-		static int LastLen;
 
 		switch (uMsg)
 		{

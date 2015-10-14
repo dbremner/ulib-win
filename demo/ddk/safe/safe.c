@@ -768,7 +768,6 @@ int ConvertFileNameUNISTRToCHAR(PUNICODE_STRING usFileName, PCHAR pChar)
 NTSTATUS   GetFilePathVista(HANDLE  KeyHandle,char   *fullname)  //取子进程文件名
 {
     PFILE_OBJECT   pKey=NULL;
-    ULONG              retSize;
     NTSTATUS   ns;
     UNICODE_STRING   dosName;
     char aPathName[MAX_PATH];
@@ -1668,7 +1667,6 @@ NTSTATUS FakedNtCreateUserProcess (PHANDLE ProcessHandle,
 {
     char aProcessName[MAX_PATH];
     char aPathName[MAX_PATH];
-    PWCHAR    wszFilePath ;
     PEPROCESS TempCurrentProcess;
     ++Quote_HookDrive;
     TempCurrentProcess=PsGetCurrentProcess();

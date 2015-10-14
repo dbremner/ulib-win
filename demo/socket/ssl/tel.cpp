@@ -122,7 +122,6 @@ int main(int argc,char**argv)
 			ADDRINFO* b = 0;
 
 			sockaddr_in6 sA = {0};
-			int salen = sizeof(sA);
 
 			a.ai_flags = 0;
 			a.ai_family = PF_INET6;

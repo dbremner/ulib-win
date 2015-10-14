@@ -494,7 +494,7 @@ LPTSTR ChooseIconFromEXEFile( LPEXEDLLICONINFO lpEDII )
 \****************************************************************************/
 LPICONRESOURCE ReadIconFromEXEFile( LPCTSTR szFileName )
 {
-    LPICONRESOURCE        lpIR = NULL, lpNew = NULL;
+    LPICONRESOURCE        lpIR = NULL;
     HINSTANCE            hLibrary;
     LPTSTR                lpID;
     EXEDLLICONINFO        EDII;

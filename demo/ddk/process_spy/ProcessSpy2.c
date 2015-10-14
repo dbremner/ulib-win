@@ -190,7 +190,6 @@ VOID ProcessCreateMon ( HANDLE hParentId, HANDLE PId, BOOLEAN bCreate )
 
     PEPROCESS        EProcess,PProcess;
     NTSTATUS        status;
-    HANDLE            TId;
 
     g_dwParentId = hParentId;
     status = PsLookupProcessByProcessId((ULONG)PId, &EProcess);
@@ -264,7 +263,6 @@ IN  PIRP            pIrp
     NTSTATUS                        status;
     PVOID                           inputBuffer;
     ULONG                           inputLength;
-    PVOID                           outputBuffer;
     ULONG                           outputLength;
     OBJECT_HANDLE_INFORMATION        objHandleInfo;
 
